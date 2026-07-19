@@ -22,6 +22,7 @@ I am not simply interested in analyzing data. I am passionate about transforming
 
 ## Contact
 
+- Personal E-Mail: [aquairus0493@naver.com](mailto:aquairus0493@naver.com)
 - E-Mail: [sejun@toytron.ai.kr](mailto:sejun@toytron.ai.kr)
 - Instagram: <https://www.instagram.com/warm_as_june_>
 - Blog: <https://blog.naver.com/warmasjune-jsj>
