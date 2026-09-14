@@ -162,6 +162,7 @@ if (audio && musicButton) {
   };
   document.addEventListener("pointerdown", resumeOnFirstGesture, { capture: true, once: true });
   document.addEventListener("keydown", resumeOnFirstGesture, { capture: true, once: true });
+  document.addEventListener("wheel", resumeOnFirstGesture, { capture: true, once: true, passive: true });
 
   audio.addEventListener("playing", () => {
     if (!wantsMusic) audio.pause();
