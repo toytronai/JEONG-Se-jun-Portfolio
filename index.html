@@ -9,15 +9,25 @@
     >
     <title>JEONG Se-jun | AI Healthcare PM</title>
     <link rel="preload" href="assets/banner-community-care.png" as="image">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260914-2">
   </head>
   <body>
+    <a class="skip-link" href="#home">Skip to content</a>
     <header class="site-header" data-header>
+      <div class="bgm-bar" aria-label="Background music">
+        <span class="sr-only" data-bgm-status role="status">Ready</span>
+        <button class="bgm-toggle" type="button" data-bgm-toggle aria-controls="background-music" aria-label="Play background music" aria-pressed="false" title="Play background music">
+          <img src="assets/icons/volume-2.svg" width="18" height="18" alt="" data-bgm-play-icon>
+          <img src="assets/icons/volume-x.svg" width="18" height="18" alt="" data-bgm-pause-icon hidden>
+          <span data-bgm-button-label>BGM ON</span>
+        </button>
+      </div>
+      <div class="header-main">
       <a class="brand" href="#home" aria-label="JEONG Se-jun home">
         <span class="brand-mark">JS</span>
         <span>JEONG Se-jun</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
         <span></span>
         <span></span>
         <span></span>
@@ -31,7 +41,9 @@
         <a href="#profile-summary">Bio</a>
         <a href="#contact">Contact</a>
       </nav>
+      </div>
     </header>
+    <audio id="background-music" src="assets/journey-with-warm-ai-j36.mp3" autoplay loop preload="auto" data-bgm></audio>
 
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
@@ -41,12 +53,13 @@
           <p class="eyebrow">AI Healthcare PM | Data Scientist | Founder</p>
           <h1 id="hero-title">JEONG Se-jun</h1>
           <p class="hero-copy">
-            Looking to expand into Asian markets and secure IT convergence talent at the same time?
+            Looking to expand into Asia while bringing on a multidisciplinary technology leader?
           </p>
           <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="mailto:sejun@toytron.ai.kr">Email</a>
-            <a class="button secondary" href="portfolio_Sejun_JEONG.md">Portfolio MD</a>
+            <a class="button primary" href="https://www.instagram.com/warm_as_june_" target="_blank" rel="noreferrer">Contact</a>
+            <a class="button secondary" href="https://app.notion.com/p/38b979b0cff0809398d7f31c82f8d46c" target="_blank" rel="noreferrer">한국어 포트폴리오</a>
             <a class="button secondary" href="https://github.com/J36-Ai-Editer" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button secondary" href="https://search.naver.com/search.naver?where=nexearch&amp;sm=tab_etc&amp;mra=bjky&amp;pkid=1&amp;os=37321440&amp;qvt=0&amp;query=%EC%A0%95%EC%84%B8%EC%A4%80" target="_blank" rel="noreferrer">Profile search</a>
           </div>
         </div>
       </section>
@@ -73,10 +86,10 @@
       </section>
 
       <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="container split">
+        <div class="container about-layout">
           <div>
             <p class="section-kicker">About</p>
-            <h2 id="about-title">Data, healthcare, human behavior, and public policy.</h2>
+            <h2 id="about-title">Data, healthcare & human behavior.</h2>
           </div>
           <div class="about-content">
             <figure class="profile-frame">
@@ -96,6 +109,11 @@
                 I work at the intersection of healthcare, data science, public policy, and human
                 behavior, focusing on aging populations, chronic disease management, digital health
                 innovation, and social welfare data.
+              </p>
+              <p>
+                My experience spans public administration, public enterprises, nonprofit leadership,
+                research, and technology entrepreneurship. Personal illness and the loss of family
+                members to cancer have strengthened my commitment to healthier aging and accessible care.
               </p>
               <blockquote>
                 "Leading the future of healthcare through AI and data."
@@ -151,7 +169,7 @@
               <div class="level level-three" aria-label="AI Engineering proficiency 3">
                 <span></span><span></span><span></span><em></em><em></em>
               </div>
-              <p>Python-based AI development, FastAPI implementation, data pipelines, and deployment.</p>
+              <p>Python, PyTorch, CNNs, FastAPI, Docker, data pipelines, model deployment, and explainable AI.</p>
             </article>
           </div>
         </div>
@@ -161,7 +179,7 @@
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Public Data & Social Impact</p>
-            <h2 id="data-title">Sensitive data experience grounded in social welfare.</h2>
+            <h2 id="data-title">Public data, grounded in social welfare.</h2>
           </div>
           <div class="data-grid">
             <article>
@@ -192,14 +210,14 @@
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Language Proficiency</p>
-            <h2 id="languages-title">Communication capacity for Korea, Japan, and broader Asian markets.</h2>
+            <h2 id="languages-title">Communication across Asian markets.</h2>
           </div>
 
           <div class="language-grid">
             <article class="language-card">
               <div class="language-head">
                 <h3>Korean</h3>
-                <span>⭐⭐⭐⭐⭐</span>
+                <span aria-label="Self-assessed proficiency: 5 plus 1">⭐⭐⭐⭐⭐ + ⭐</span>
               </div>
               <p class="language-level">Native Speaker</p>
               <ul>
@@ -212,10 +230,10 @@
               </div>
             </article>
 
-            <article class="language-card featured-language">
+            <article class="language-card">
               <div class="language-head">
                 <h3>Japanese</h3>
-                <span>⭐⭐⭐⭐⭐</span>
+                <span aria-label="Self-assessed proficiency: 4 out of 5">⭐⭐⭐⭐</span>
               </div>
               <p class="language-level">Business-level communication</p>
               <ul>
@@ -226,7 +244,6 @@
               </ul>
               <div class="cert-list">
                 <span>JLPT N1</span>
-                <span>BJT J1</span>
               </div>
             </article>
 
@@ -271,9 +288,14 @@
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Experience</p>
-            <h2 id="experience-title">Public, research, business, and social innovation roles.</h2>
+            <h2 id="experience-title">Experience across sectors.</h2>
           </div>
           <div class="timeline">
+            <article>
+              <span>Advisory</span>
+              <h3>Member, National Industry-Academia-Research Cooperation Committee</h3>
+              <p>AI and healthcare advisory under the Prime Minister's Office, including public data and older-adult health AI platforms.</p>
+            </article>
             <article>
               <span>Current</span>
               <h3>Director, AI LAB</h3>
@@ -286,13 +308,76 @@
             </article>
             <article>
               <span>Private Sector</span>
-              <h3>Director, AI Research Division, Toytron Co., Ltd.</h3>
+              <h3>Director, Toytron AI Research Institute</h3>
               <p>AI-oriented education, play, content, and product development.</p>
             </article>
             <article>
+              <span>Business</span>
+              <h3>Vice President, JTOY Co., Ltd.</h3>
+              <p>Business operations and technology entrepreneurship in digital toys and educational products.</p>
+            </article>
+            <article>
               <span>Public Sector</span>
-              <h3>Ministry of National Defense and Korea Racing Authority</h3>
-              <p>Administrative data, veterans affairs data, and addiction-related public data.</p>
+              <h3>Staff Member, Korea Racing Authority</h3>
+              <p>Busan-Gyeongnam operations and addiction-related data concerning middle-aged and older adults.</p>
+            </article>
+            <article>
+              <span>Public Sector</span>
+              <h3>Commissioned Officer, Ministry of National Defense</h3>
+              <p>Veterans affairs data and citizen service. Recognition for civil-service response and a Minister of National Defense commendation.</p>
+            </article>
+            <article>
+              <span>Research</span>
+              <h3>BK Social Welfare Workforce Development Group</h3>
+              <p>Gerontechnology research at the intersection of aging, social welfare, care technology, and the Fourth Industrial Revolution.</p>
+            </article>
+            <article>
+              <span>Partnerships</span>
+              <h3>Director of External Relations, APN Co., Ltd.</h3>
+              <p>External relations and business collaboration.</p>
+            </article>
+            <article>
+              <span>Research</span>
+              <h3>Director, Korea Political Analysis Institute</h3>
+              <p>Policy analysis and research leadership.</p>
+            </article>
+            <article>
+              <span>Regional Policy</span>
+              <h3>Head of Division, Gyeongnam Regional Policy Institute</h3>
+              <p>Regional policy research and public-interest initiatives.</p>
+            </article>
+            <article>
+              <span>Social Impact</span>
+              <h3>Representative, Crimate Educational Materials</h3>
+              <p>Educational materials under the Korea Educational Materials Development Institute.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section impact-section" aria-labelledby="impact-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Research & Field Improvement</p>
+            <h2 id="impact-title">From evidence to everyday services.</h2>
+          </div>
+          <div class="impact-grid">
+            <article>
+              <h3>Data & customer service</h3>
+              <p>Policy research using addiction and at-risk population data, including Korea Racing Authority and temporary youth-shelter contexts. Combined DB analysis with citizen and customer response to address service needs.</p>
+            </article>
+            <article>
+              <h3>Game-based health education</h3>
+              <p>Adapted digital and health education for rural children, adolescents, and older adults. Applied Unity to educational content and older-adult cognitive games.</p>
+              <p class="impact-detail">Educational-content design registered in 2024: No. 30-1298751.</p>
+            </article>
+            <article>
+              <h3>Kkachi: integrated senior welfare</h3>
+              <p>Planned the senior-welfare platform “Kkachi.” Six founding members, including myself, are building product and development skills to reduce dependence on outsourced development and respond to users directly.</p>
+            </article>
+            <article>
+              <h3>Research & professional community</h3>
+              <p>BrainKorea research, Gerontechnology and SSWR participation, and academic networks across SNU, KAIST, and PNU. Engagement with SILVIA Health and Cera to explore real-world applications.</p>
             </article>
           </div>
         </div>
@@ -303,7 +388,7 @@
           <div class="section-heading with-controls">
             <div>
               <p class="section-kicker">Projects</p>
-              <h2 id="projects-title">2026 AI healthcare, public data, and competition work.</h2>
+              <h2 id="projects-title">2026 Projects</h2>
             </div>
             <div class="filter-group" aria-label="Project filters">
               <button class="filter-button active" type="button" data-filter="all">All</button>
@@ -316,7 +401,7 @@
 
           <div class="project-grid" data-project-grid>
             <article class="project-card" data-category="healthcare analysis">
-              <span>Apr 2026</span>
+              <span>Apr</span>
               <h3>Smoking Behavior Data Analysis</h3>
               <p>EDA, health factor analysis, statistical validation, and insight generation.</p>
               <ul>
@@ -327,7 +412,7 @@
               </ul>
             </article>
             <article class="project-card" data-category="healthcare model">
-              <span>Apr 2026</span>
+              <span>Apr</span>
               <h3>Smoking Prediction AI Model</h3>
               <p>Preprocessing, feature engineering, Random Forest modeling, and SHAP-based XAI.</p>
               <ul>
@@ -337,7 +422,7 @@
               </ul>
             </article>
             <article class="project-card" data-category="healthcare analysis">
-              <span>May 2026</span>
+              <span>May</span>
               <h3>Wearable Healthcare Analytics</h3>
               <p>Heart rate, body temperature, oxygen saturation monitoring, and anomaly detection.</p>
               <ul>
@@ -348,9 +433,9 @@
               </ul>
             </article>
             <article class="project-card" data-category="healthcare model">
-              <span>2026</span>
-              <h3>Medical Image AI Model</h3>
-              <p>AI model development using X-ray medical images for computer vision practice.</p>
+              <span title="Project submission deadline: July 1">Jul</span>
+              <h3>Chest X-ray Pneumonia Prediction</h3>
+              <p>Developed a pneumonia prediction model from chest X-rays. First place in an individual AI hackathon.</p>
               <ul>
                 <li>X-ray</li>
                 <li>CNN</li>
@@ -359,7 +444,7 @@
               </ul>
             </article>
             <article class="project-card" data-category="healthcare platform model">
-              <span>2026</span>
+              <span title="Project submission deadline: July 29">Jul</span>
               <h3>AI Model Serving & Web Deployment</h3>
               <p>FastAPI-based AI model serving and Docker-based web service deployment.</p>
               <ul>
@@ -370,9 +455,9 @@
               </ul>
             </article>
             <article class="project-card" data-category="healthcare platform model">
-              <span>May 2026 - Present</span>
+              <span>May - Present</span>
               <h3>Na No W</h3>
-              <p>Infertility prediction and personalized healthcare platform planning.</p>
+              <p>Infertility factor analysis and AI development for personalized healthcare, alongside platform planning.</p>
               <ul>
                 <li>ML</li>
                 <li>Healthcare Analytics</li>
@@ -380,9 +465,9 @@
               </ul>
             </article>
             <article class="project-card" data-category="healthcare model">
-              <span>2026</span>
-              <h3>Explainable AI Research</h3>
-              <p>SHAP, DiCE, Anchor Explanations, and interpretability research for healthcare AI.</p>
+              <span title="NLP training: June 18-25; research completion date not specified">Jun</span>
+              <h3>Explainable Medical AI & NLP</h3>
+              <p>SHAP, DiCE, and Anchor-based healthcare model interpretation and NLP-assisted search research.</p>
               <ul>
                 <li>Python</li>
                 <li>SHAP</li>
@@ -390,8 +475,26 @@
                 <li>Anchor</li>
               </ul>
             </article>
+            <article class="project-card" data-category="healthcare model">
+              <span title="Final hackathon submission deadline: August 7">Aug · Team 3rd place</span>
+              <h3>Genomic Cancer Classification</h3>
+              <p>Developed a cancer-type classification model using genetic information. Third place as a team in an AI hackathon.</p>
+              <ul><li>Genomic Data</li><li>Classification</li></ul>
+            </article>
+            <article class="project-card" data-category="healthcare platform model">
+              <span title="Stress-prediction hackathon deadline: August 7; web service completion date not specified">Aug</span>
+              <h3>Stress Prediction & Prevention</h3>
+              <p>Developed a web service focused on predicting stress and supporting prevention.</p>
+              <ul><li>AI</li><li>Mental Health</li><li>Web Service</li></ul>
+            </article>
+            <article class="project-card" data-category="healthcare platform model">
+              <span>Aug</span>
+              <h3>Gandangandang</h3>
+              <p>Chronic-disease prediction AI and a challenge-based web service for diabetes and hypertension management.</p>
+              <ul><li>Chronic Conditions</li><li>Healthcare AI</li></ul>
+            </article>
             <article class="project-card" data-category="competition healthcare platform">
-              <span>MEDICAL HACK 2026</span>
+              <span>Jun · MEDICAL HACK</span>
               <h3>MIND QUEST</h3>
               <p>AI-adaptive visual novel platform for early intervention in adolescent depressive symptoms.</p>
               <ul>
@@ -401,7 +504,7 @@
               </ul>
             </article>
             <article class="project-card" data-category="competition healthcare platform">
-              <span>K-Digital Training Hackathon 2026</span>
+              <span>Jun · K-Digital Training Hackathon</span>
               <h3>Dopamin-Go</h3>
               <p>AI self-regulation healthcare platform for youth digital overdependence and daily recovery.</p>
               <ul>
@@ -411,7 +514,7 @@
               </ul>
             </article>
             <article class="project-card" data-category="competition analysis platform">
-              <span>Busan DIVE 2026</span>
+              <span>Jul · Busan DIVE</span>
               <h3>D1V3</h3>
               <p>Urban accessibility blind-spot dashboard using Haeundae-gu public data, N3XT prediction model, and S1GN user indicators.</p>
               <ul>
@@ -422,7 +525,7 @@
               </ul>
             </article>
             <article class="project-card" data-category="competition healthcare platform">
-              <span>Presidential Office Youth Policy Competition</span>
+              <span>Aug · Presidential Office Youth Policy Competition</span>
               <h3>Youth Digital Self-Regulation Policy</h3>
               <p>Policy research and healthcare service proposal for building digital self-regulation infrastructure.</p>
               <ul>
@@ -432,14 +535,28 @@
               </ul>
             </article>
             <article class="project-card" data-category="competition">
-              <span>Before 2025</span>
-              <h3>Earlier Projects</h3>
-              <p>Public-interest, research, entrepreneurship, and policy projects before 2025 are summarized separately.</p>
-              <ul>
-                <li>Naver Profile</li>
-                <li>Public Records</li>
-              </ul>
+              <span>In progress</span>
+              <h3>Wanted AI Hackathon</h3>
+              <p>Hackathon participation in progress.</p>
+              <ul><li>AI</li><li>Hackathon</li></ul>
             </article>
+            <article class="project-card" data-category="competition">
+              <span>In progress</span>
+              <h3>Everyone's Startup</h3>
+              <p>“모두의 창업” participation in progress, supported by entrepreneurship-policy consulting and mentoring.</p>
+              <ul><li>Entrepreneurship</li><li>Mentoring</li></ul>
+            </article>
+            <article class="project-card" data-category="competition">
+              <span>In progress</span>
+              <h3>AI Social Challenges Competition</h3>
+              <p>“AI 사회현안해결 챌린지” participation in progress.</p>
+              <ul><li>AI</li><li>Social Impact</li></ul>
+            </article>
+          </div>
+          <div class="earlier-projects">
+            <h3>Projects through 2025</h3>
+            <p>Earlier public-interest, research, entrepreneurship, and policy projects are documented separately.</p>
+            <a class="text-link" href="https://search.naver.com/search.naver?where=nexearch&amp;sm=tab_etc&amp;mra=bjky&amp;pkid=1&amp;os=37321440&amp;qvt=0&amp;query=%EC%A0%95%EC%84%B8%EC%A4%80" target="_blank" rel="noreferrer">View my profile and public records</a>
           </div>
         </div>
       </section>
@@ -448,7 +565,7 @@
         <div class="container split">
           <div>
             <p class="section-kicker">Awards</p>
-            <h2 id="awards-title">Recognition for talent, public impact, and social innovation.</h2>
+            <h2 id="awards-title">Recognition & public impact.</h2>
           </div>
           <div class="award-list">
             <article>
@@ -475,6 +592,14 @@
               <span>2023</span>
               <p>Korea Volunteer Center Award</p>
             </article>
+            <article>
+              <span>2022</span>
+              <p>Samsung Life Insurance Chairman's Award</p>
+            </article>
+            <article>
+              <span>2026 · Pending</span>
+              <p>Presidential Commendation <small>Presentation pending</small></p>
+            </article>
           </div>
         </div>
       </section>
@@ -483,7 +608,7 @@
         <div class="container">
           <div class="section-heading">
             <p class="section-kicker">Full Profile Summary</p>
-            <h2 id="bio-title">A bilingual overview for quick review.</h2>
+            <h2 id="bio-title">Profile at a glance.</h2>
           </div>
 
           <div class="bio-table">
@@ -493,26 +618,27 @@
               <section>
                 <h4>주요 학력</h4>
                 <ul>
-                  <li>DB(Integrated M.S./Ph.D.)</li>
-                  <li>Social Welfare M.S.</li>
-                  <li>Child & Family B.A.</li>
-                  <li>DPA B.A.</li>
+                  <li>부산대학교 행정학과(행정통계) 졸업</li>
+                  <li>부산대학교 아동가족학과 졸업</li>
+                  <li>부산대학교 일반대학원 사회복지학과 수료</li>
                 </ul>
               </section>
 
               <section>
                 <h4>IT 훈련</h4>
                 <ul>
-                  <li>KAIST AIM</li>
-                  <li>AI 헬스케어 초격차 캠프</li>
-                  <li>경남디지털인재양성과정 최우수 수료</li>
+                  <li>KAIST AIM 수료</li>
+                  <li>AI 헬스케어 초격차 캠프(K-디지털 트레이닝) 훈련 중</li>
+                  <li>K-디지털 기초역량훈련: 유니티를 활용한 2D/3D 게임 개발 최우수 수료</li>
+                  <li>경남디지털인재양성과정(경남디지털채움교육) 최우수(수석 공훈) 수료</li>
+                  <li>육군 신임장교 지휘참모과정(OBC, 정보) 최우수(교육단 표창) 수료</li>
                 </ul>
               </section>
 
               <section>
                 <h4>최근 경력</h4>
                 <ul>
-                  <li>국무총리 산하 국가산학연협력위원회 위원</li>
+                  <li>국무총리 산하 국가산학연협력위원회 위원: AI·헬스케어·공공데이터 및 노인 건강 AI 플랫폼 사업 자문</li>
                   <li>정많은세상을준비하는 AI LAB Director</li>
                   <li>㈜제이토이 부사장</li>
                   <li>토이트론 AI 연구소 이사</li>
@@ -523,6 +649,7 @@
                   <li>㈜에이피엔 대외협력 이사</li>
                   <li>국방부 장교</li>
                   <li>한국마사회 부산경남 직원</li>
+                  <li>BK 4차산업혁명 시대 사회복지인력양성단: 제론테크놀로지 연구</li>
                 </ul>
               </section>
 
@@ -535,14 +662,21 @@
                   <li>2024 세상을바꾸는시간V 경남대회 대상</li>
                   <li>2023 한국자원봉사센터장상</li>
                   <li>2023 경상남도지사상</li>
+                  <li>2022 삼성생명이사장상</li>
+                  <li>국방부 장관표창 · 민원처리우수공무원</li>
+                  <li>2026 대통령 표창(수여 예정)</li>
                 </ul>
               </section>
 
               <section>
-                <h4>기타사항</h4>
+                <h4>자격 및 대외 활동</h4>
                 <ul>
-                  <li>심리상담사, 보육교사, 장애영유아교사, 사회복지사, 행정관리사 등 인간발달 관련 자격 보유</li>
-                  <li>사회조사분석사, 빅데이터분석기사, 데이터분석 준전문가 등 DB 자격 보유</li>
+                  <li>고객서비스: CS 리더스 관리사, 행정관리사 등</li>
+                  <li>데이터: 사회조사분석사, 데이터분석 준전문가 등</li>
+                  <li>인간발달: 보육교사, 장애영유아교사, 사회복지사 등</li>
+                  <li>젠스파크 등 AI 앰버서더 · IT 인플루언서</li>
+                  <li>미숙아 진단 센서 등 홍보대사 · 대한민국 인재상 수상자회 협업</li>
+                  <li><a class="text-link" href="https://www.instagram.com/warm_as_june_" target="_blank" rel="noreferrer">인스타그램(팔로워 2만+)</a></li>
                 </ul>
               </section>
             </article>
@@ -553,26 +687,27 @@
               <section>
                 <h4>Key Education</h4>
                 <ul>
-                  <li>DB (Integrated M.S./Ph.D.)</li>
-                  <li>Social Welfare M.S.</li>
-                  <li>Child & Family B.A.</li>
-                  <li>DPA B.A.</li>
+                  <li>B.A. in Public Administration (Administrative Statistics), Pusan National University</li>
+                  <li>B.A. in Child & Family Studies, Pusan National University</li>
+                  <li>Graduate coursework completed in Social Welfare, Pusan National University Graduate School (degree not awarded)</li>
                 </ul>
               </section>
 
               <section>
                 <h4>IT Training</h4>
                 <ul>
-                  <li>KAIST AIM</li>
-                  <li>AI Healthcare Bootcamp (Government-Funded Training Program)</li>
-                  <li>Outstanding Graduate, Gyeongnam Digital Talent Program</li>
+                  <li>KAIST AIM: completed</li>
+                  <li>AI Healthcare Bootcamp (Government-Funded K-Digital Training Program): in progress</li>
+                  <li>K-Digital Basic Skills Training: Unity 2D/3D game development, outstanding graduate</li>
+                  <li>Gyeongnam Digital Talent Program (Gyeongnam Digital Chaeum Education): top graduate</li>
+                  <li>ROK Army Officer Basic Course (Intelligence): outstanding graduate, training-unit commendation</li>
                 </ul>
               </section>
 
               <section>
                 <h4>Recent Experience</h4>
                 <ul>
-                  <li>Member, National Industry-Academia-Research Cooperation Committee under the Prime Minister's Office</li>
+                  <li>Member, National Industry-Academia-Research Cooperation Committee under the Prime Minister's Office: AI, healthcare, public data, and senior-health platform advisory</li>
                   <li>Director, AI LAB for Preparing a Warm-Hearted World</li>
                   <li>Vice President, JTOY Co., Ltd.</li>
                   <li>Director, Toytron AI Research Institute</li>
@@ -583,6 +718,7 @@
                   <li>Director of External Relations, APN Co., Ltd.</li>
                   <li>Commissioned Officer, Ministry of National Defense</li>
                   <li>Staff Member, Korea Racing Authority Busan-Gyeongnam</li>
+                  <li>Gerontechnology research, BK Social Welfare Workforce Development Group for the Fourth Industrial Revolution</li>
                 </ul>
               </section>
 
@@ -595,14 +731,21 @@
                   <li>2024 Grand Prize, Sebasi V Gyeongnam Competition</li>
                   <li>2023 Korea Volunteer Center Award</li>
                   <li>2023 Governor of Gyeongsangnam-do Award</li>
+                  <li>2022 Samsung Life Insurance Chairman's Award</li>
+                  <li>Minister of National Defense Commendation · Recognition for excellence in civil-service response</li>
+                  <li>2026 Presidential Commendation (presentation pending)</li>
                 </ul>
               </section>
 
               <section>
-                <h4>Additional Notes</h4>
+                <h4>Certifications & Engagement</h4>
                 <ul>
-                  <li>Holds human development-related certifications, including psychological counselor, childcare teacher, teacher for young children with disabilities, social worker, and administrative manager.</li>
-                  <li>Holds database and data analytics-related certifications, including Survey Analyst, Big Data Analysis Engineer, and Advanced Data Analytics Semi-Professional.</li>
+                  <li>Customer service: CS Leaders certification, Administrative Management certification, and others</li>
+                  <li>Data: Social Survey Analyst, Advanced Data Analytics Semi-Professional (ADsP), and others</li>
+                  <li>Human development: childcare teacher, teacher for young children with disabilities, social worker, and others</li>
+                  <li>AI ambassador, including Genspark, and technology influencer</li>
+                  <li>Advocacy for preterm-infant diagnostic sensors and collaboration within the Korea Talent Award community</li>
+                  <li><a class="text-link" href="https://www.instagram.com/warm_as_june_" target="_blank" rel="noreferrer">Instagram · 20K+ followers</a></li>
                 </ul>
               </section>
             </article>
@@ -630,16 +773,18 @@
           <p>AI Healthcare PM | Data Scientist | Founder</p>
         </div>
         <div class="footer-links">
-          <a href="mailto:aquairus0493@naver.com">aquairus0493@naver.com</a>
+          <a href="mailto:aquarius0493@naver.com">aquarius0493@naver.com</a>
           <a href="mailto:sejun@toytron.ai.kr">sejun@toytron.ai.kr</a>
-          <a href="https://www.instagram.com/warm_as_june_" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="tel:+821096650493" aria-label="Call +82 10-9665-0493">+82 10-9665-0493</a>
+          <a href="https://www.instagram.com/warm_as_june_" target="_blank" rel="noreferrer">Instagram · 20K+ followers</a>
           <a href="https://blog.naver.com/warmasjune-jsj" target="_blank" rel="noreferrer">Blog</a>
           <a href="https://github.com/J36-Ai-Editer" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://search.naver.com/search.naver?where=nexearch&amp;sm=tab_etc&amp;mra=bjky&amp;pkid=1&amp;os=37321440&amp;qvt=0&amp;query=%EC%A0%95%EC%84%B8%EC%A4%80" target="_blank" rel="noreferrer">JEONG Se-jun: Profile search</a>
         </div>
       </div>
       <p class="copyright">© <span data-year></span> JEONG Se-jun. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260914-2"></script>
   </body>
 </html>
