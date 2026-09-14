@@ -114,8 +114,8 @@ if (audio && musicButton) {
     }
   };
 
-  const startMusic = async () => {
-    if (pending || !wantsMusic) return;
+  const startMusic = async ({ fromGesture = false } = {}) => {
+    if (!wantsMusic || (pending && !fromGesture)) return;
     const currentAttempt = ++attempt;
     pending = true;
     waitingForGesture = false;
@@ -155,12 +155,13 @@ if (audio && musicButton) {
     }
   });
 
-  // A permitted first interaction can start playback when initial autoplay is blocked.
-  document.addEventListener("click", (event) => {
-    if (waitingForGesture && wantsMusic && !musicButton.contains(event.target)) {
-      void startMusic();
-    }
-  });
+  // Browsers may block audible autoplay. Capture the visitor's first gesture so
+  // playback can begin even when it occurs before the initial autoplay rejection.
+  const resumeOnFirstGesture = (event) => {
+    if (wantsMusic && !musicButton.contains(event.target)) void startMusic({ fromGesture: true });
+  };
+  document.addEventListener("pointerdown", resumeOnFirstGesture, { capture: true, once: true });
+  document.addEventListener("keydown", resumeOnFirstGesture, { capture: true, once: true });
 
   audio.addEventListener("playing", () => {
     if (!wantsMusic) audio.pause();
